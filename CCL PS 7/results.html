@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-item: center;
+        }
+        #weatherResults {
+            background-color: #C0D8C0;
+            font-family: "Lato", sans-serif;
+            font-size: 20px;
+            padding: 20px 30px;
+            display: inline-block;
+            text-align: center;
+            margin: 20px;
+            margin-top: 5%;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+    </style>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Post Office Information</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div id="weatherResults">
+            <table>
+                <tr>
+                    <th>
+                        <h4>State of Post Office :</h4>
+                    </th>
+                    <th>
+                        <h4>{{ post_office }}</h4>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <h4>Name of Post Office :</h4>
+                    </th>
+                    <th>
+                        <h4>{{ name }}</h4>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <h4>Block of Post Office:</h4>
+                    </th>
+                    <th>
+                        <h4>{{ block }}</h4>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <h4>District of Post Office:</h4>
+                    </th>
+                    <th>
+                        <h4>{{ district }}</h4>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <h4>Division of Post Office:</h4>
+                    </th>
+                    <th>
+                        <h4>{{ division }}</h4>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <h4>Branch type:</h4>
+                    </th>
+                    <th>
+                        <h4>{{ branchType }}</h4>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <h4>Country of Post Office:</h4>
+                    </th>
+                    <th>
+                        <h4>{{ country }}</h4>
+                    </th>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
